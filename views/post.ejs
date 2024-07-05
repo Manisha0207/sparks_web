@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+    <h1>
+        <%= post.title %>
+    </h1>
+    <p>
+        <%= post.content %>
+    </p>
+    <small>Created on: <%= new Date(post.createdAt).toDateString() %></small>
+    <% if (post.updatedAt) { %>
+        <br>
+        <small>Updated on: <%= new Date(post.updatedAt).toDateString() %></small>
+        <% } %>
+            <form action="/posts/<%= post.id %>/delete" method="POST" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+            <a href="/posts/<%= post.id %>/edit">Edit</a>
+            <%- include("partials/footer.ejs") %>

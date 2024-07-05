@@ -1,0 +1,147 @@
+html,
+body{
+    background-color:#b3b9fa;
+    /* color:#F6F5F2; */
+    color:black;
+    box-sizing: border-box;
+    
+}
+
+header,
+footer {
+    flex: 0 0 auto;
+    padding:0px;
+    margin: 0px;
+}
+
+main {
+    text-align: center;
+    padding: 5vmin;
+    flex: 1 0 auto;
+}
+.logo-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.hero-img {
+    height: auto;
+    width: 100%;
+    box-shadow: 10px 10px #fc8cb4;
+    border-radius:25px;
+}
+.menu {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+p{
+    text-align: center;
+}
+.profile-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+form {
+    margin-top: 50px;
+}
+
+.feedback-input {
+    color:black;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #f2f2f2;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #fc8cb4;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    width: 100%;
+    background:#fc8cb4;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #7d82b2;
+}
+.create_post{
+    height:300px;
+}
+textarea{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color:#b3b9fa;
+    border: none;
+}
+.main-text{
+    font-size: 30px;
+    height: 50px;
+    /* color: #f2f2f2; */
+    color: black;
+}
+.inside-text{
+    min-height:170px;
+    /* color:#f2f2f2 */
+    color:black;
+}
+.view-post{
+    border:5px solid black;
+    border-radius: 25px;
+}
+.post-heading{
+    color:black;
+}
+
+.a-head:link {
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+
+.a-head:visited {
+    color: #fc8cb4
+}
+.blog-heading{
+    color:black;
+}
+.post-heading{
+    color: black;
+}
+.post-content{
+    color: black;
+}

@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+    <h1 class="blog-heading">Blog Posts</h1>
+        <% posts.forEach(post=> { %>
+            <div class="view-post">
+                <h2 class="post-heading"><a href="/posts/<%= post.id %>">
+                        <%= post.title %>
+                    </a></h2>
+                <p class="post-content">
+                    <%= post.content %>
+                </p>
+                <small>Created on: <%= new Date(post.createdAt).toDateString() %></small>
+                <% if (post.updatedAt) { %>
+                    <br>
+                    <small>Updated on: <%= new Date(post.updatedAt).toDateString() %></small>
+                    <% } %>
+                        <form action="/posts/<%= post.id %>/delete" method="post" style="display:inline;">
+                            <button type="submit">Delete</button>
+                        </form>
+                        <a href="/posts/<%= post.id %>/edit">Edit</a>
+            </div>
+            <hr>
+            <% }) %>
+
+    <a href="/posts/new">Create a New Post</a>
+    <%- include("partials/footer.ejs") %>

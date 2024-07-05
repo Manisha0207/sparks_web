@@ -1,0 +1,9 @@
+<%- include("partials/header.ejs") %>
+<div class="creates_post">
+    <form action="/posts" method = "post">
+        <textarea class="main-text" name="title" placeholder="Title" required></textarea>
+        <textarea class="inside-text" name = "content" placeholder="Tell Your Story..." required></textarea>
+        <button type="submit">PUBLISH</button>
+    </form>
+</div>
+<%- include("partials/footer.ejs") %>
