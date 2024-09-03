@@ -30,5 +30,3 @@ Or, if Nodemon is installed locally:
   npx nodemon index.js
 Using node
   node index.js
-
-7. 
